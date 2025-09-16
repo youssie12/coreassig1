@@ -11,7 +11,7 @@ jobs:
   terraform-plan:
     name: Terraform Plan (PR)
     runs-on: ubuntu-latest
-    if: github.event_name == 'pull_request'
+  
     steps:
       - uses: actions/checkout@v4
       - name: Configure AWS credentials
