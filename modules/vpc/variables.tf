@@ -1,5 +1,6 @@
-variable "cidr" {
-  description = "CIDR block for the VPC"
-  type        = string
-  default     = "10.0.0.0/16"
-}
+variable "region" {}
+variable "vpc_cidr" {}
+variable "public_subnet_cidr" {}
+variable "app_subnet_cidr" {}
+variable "monitoring_subnet_cidr" {}
+variable "data_subnet_cidr" {}

@@ -61,6 +61,6 @@ jobs:
           terraform_version: 1.5.0
       - name: Terraform apply
         run: |
-          cd infrastructure/envs/dev
+          cd infrastructure/envs/ -
           terraform init -input=false
           terraform apply -auto-approve
